@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DependencyInjectionGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\SourceGeneratorWeb\\SourceGeneratorWeb.csproj"
+    }
+  }
+}
