@@ -1,4 +1,4 @@
-﻿namespace SourceGeneratorWeb.Models
+namespace SourceGeneratorWeb.Models
 {
     [AddService]
     public class ExampleService

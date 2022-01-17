@@ -7,7 +7,9 @@ namespace DependencyInjectionGenerator
     internal class ServicesReceiver : ISyntaxReceiver
     {
         public List<ClassDeclarationSyntax> ClassesToRegister { get; } = new();
-        public InvocationExpressionSyntax InvocationSyntaxNode { get; private set; }
+
+        public InvocationExpressionSyntax? InvocationSyntaxNode { get; private set; }
+
         public bool HasCallToMethod { get; private set; }
 
         public void OnVisitSyntaxNode(SyntaxNode syntaxNode)
