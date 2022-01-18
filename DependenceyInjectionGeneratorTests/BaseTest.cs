@@ -60,7 +60,7 @@ namespace DependenceyInjectionGeneratorTests
                                                        references,
                                                        new CSharpCompilationOptions(outputKind));
 
-            var generator = new Generator();
+            var generator = new IncrementalGenerator();
 
             var driver = CSharpGeneratorDriver.Create(generator);
             driver.RunGeneratorsAndUpdateCompilation(compilation, out var outputCompilation, out var generateDiagnostics);
