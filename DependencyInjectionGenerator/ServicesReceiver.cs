@@ -21,13 +21,7 @@ namespace DependencyInjectionGenerator
                 {
                     Expression: MemberAccessExpressionSyntax
                     {
-                        Name:
-                        {
-                            Identifier:
-                            {
-                                ValueText: "AddServicesToDI"
-                            }
-                        }
+                        Name.Identifier.ValueText: "AddServicesToDI"
                     }
                 } invocationSyntax)
             {
