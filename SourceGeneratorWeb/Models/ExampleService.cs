@@ -1,19 +1,18 @@
-namespace SourceGeneratorWeb.Models
+namespace SourceGeneratorWeb.Models;
+
+[AddService]
+public class ExampleService
 {
-    [AddService]
-    public class ExampleService
-    {
-        private readonly AnotherService anotherService;
+    private readonly AnotherService anotherService;
 
-        public ExampleService(AnotherService anotherService) =>
-            this.anotherService = anotherService;
+    public ExampleService(AnotherService anotherService) =>
+        this.anotherService = anotherService;
 
-        public string GetValue() => anotherService.Value;
-    }
+    public string GetValue() => anotherService.Value;
+}
 
-    [AddService]
-    public class AnotherService
-    {
-        public string Value => "Hello";
-    }
+[AddService]
+public class AnotherService
+{
+    public string Value => "Hello";
 }
