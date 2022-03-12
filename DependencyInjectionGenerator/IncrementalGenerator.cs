@@ -9,7 +9,7 @@ using System.Text;
 
 namespace DependencyInjectionGenerator
 {
-    //[Generator] // uncomment to use it (don't forget to comment the other generator)
+    [Generator] // uncomment to use it (don't forget to comment the other generator)
     public class IncrementalGenerator : IIncrementalGenerator
     {
         public void Initialize(IncrementalGeneratorInitializationContext initContext)
