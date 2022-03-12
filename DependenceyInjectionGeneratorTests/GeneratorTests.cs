@@ -1,6 +1,4 @@
-using Microsoft.CodeAnalysis;
 using Shouldly;
-using Xunit;
 using Xunit.Abstractions;
 
 namespace DependenceyInjectionGeneratorTests
